@@ -1,0 +1,27 @@
+{
+  "name": "express-api-teaching",
+  "version": "1.0.0",
+  "description": "for teaching API creation using Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danivijay/express-api-teaching.git"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "rest"
+  ],
+  "author": "Dani Vijay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danivijay/express-api-teaching/issues"
+  },
+  "homepage": "https://github.com/danivijay/express-api-teaching#readme",
+  "dependencies": {
+    "express": "4.16.2"
+  }
+}

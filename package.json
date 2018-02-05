@@ -4,7 +4,8 @@
   "description": "for teaching API creation using Express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "homepage": "https://github.com/danivijay/express-api-teaching#readme",
   "dependencies": {
     "express": "4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.14.12"
   }
 }

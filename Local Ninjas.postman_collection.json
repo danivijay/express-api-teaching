@@ -1,0 +1,150 @@
+{
+	"info": {
+		"name": "Local Ninjas",
+		"_postman_id": "cdbb7976-3c2b-fa01-aba8-b8340adaaccc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get ninja",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000/api/ninjas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"ninjas"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get ninja geo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000/api/ninjas?lng=-80&lat=25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"ninjas"
+					],
+					"query": [
+						{
+							"key": "lng",
+							"value": "-80",
+							"equals": true
+						},
+						{
+							"key": "lat",
+							"value": "25",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post ninja",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"ryu\",\r\n  \"rank\": \"black belt\",\r\n  \"available\": true,\r\n  \"geometry\" : {\"type\": \"point\", \"coordinates\": [-80, 25.791]}\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/ninjas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"ninjas"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "patch ninja",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"utmostdev\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/ninjas/5a787ccf633f5c13741a6c58",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"ninjas",
+						"5a787ccf633f5c13741a6c58"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete ninja",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000/api/ninjas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"ninjas",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

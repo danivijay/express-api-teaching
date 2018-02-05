@@ -14,7 +14,7 @@ const NinjaSchema = new Schema({
     type: Boolean,
     default: false
   }
-
+  
   // add in geolocation
 })
 
